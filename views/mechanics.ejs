@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mechanics</h1>
+    <% const age = 90 %>
+    <p> <%= age * 20 %> </p>
+    <main>
+       
+    <% mechanics.forEach(mech=>{ %>
+
+        <div>
+            <h2><%= mech.full_name  %></h2>
+            <p> <%= mech.phone %>    </p>
+            <p> <%= mech.specialty %>    </p>
+        </div>
+
+    <% }) %>
+        
+
+    </main>
+    <style>
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        main > div{
+            background-color: aliceblue;
+            border-radius: 17px;
+            padding: 12px;
+        }
+    </style>
+</body>
+</html>
